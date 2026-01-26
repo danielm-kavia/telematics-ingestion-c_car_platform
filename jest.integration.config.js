@@ -8,6 +8,11 @@ module.exports = {
   testMatch: ["**/*.spec.js"],
   testTimeout: 30000,
   collectCoverage: false,
+
+  // Start/stop required services for the integration suite only.
+  globalSetup: "<rootDir>/tests/integration/harness/jestGlobalSetup.js",
+  globalTeardown: "<rootDir>/tests/integration/harness/jestGlobalTeardown.js",
+
   reporters: [
     "default",
     [

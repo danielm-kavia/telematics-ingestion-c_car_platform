@@ -15,8 +15,8 @@
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:integration": "jest --config jest.integration.config.js --runInBand",
-    "test:integration:coverage": "jest --config jest.integration.coverage.config.js --runInBand"
+    "test:integration": "VEHICLE_STATE_TEST_PORT=3101 TELEMATICS_INGESTION_TEST_PORT=3102 VEHICLE_STATE_BASE_URL=http://127.0.0.1:3101 TELEMATICS_INGESTION_BASE_URL=http://127.0.0.1:3102 TIMESCALE_ENABLED=false KAFKA_ENABLED=false jest --config jest.integration.config.js --runInBand",
+    "test:integration:coverage": "VEHICLE_STATE_TEST_PORT=3101 TELEMATICS_INGESTION_TEST_PORT=3102 VEHICLE_STATE_BASE_URL=http://127.0.0.1:3101 TELEMATICS_INGESTION_BASE_URL=http://127.0.0.1:3102 TIMESCALE_ENABLED=false KAFKA_ENABLED=false jest --config jest.integration.coverage.config.js --runInBand"
   },
   "dependencies": {
     "@connected-car/shared": "file:../shared-c_car_platform",
