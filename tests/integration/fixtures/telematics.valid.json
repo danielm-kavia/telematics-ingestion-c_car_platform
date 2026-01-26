@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "v1",
+  "vehicleId": "VIN_INTEG_123",
+  "timestamp": "2026-01-21T00:00:00.000Z",
+  "speedKph": 42,
+  "latitude": 37.77,
+  "longitude": -122.41,
+  "batteryPct": 88,
+  "fuelPct": 55
+}

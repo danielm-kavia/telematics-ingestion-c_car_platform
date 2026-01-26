@@ -1,0 +1,6 @@
+{
+  "schemaVersion": "v1",
+  "vehicleId": "VIN_INTEG_123",
+  "timestamp": "not-a-date",
+  "speedKph": 10
+}

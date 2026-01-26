@@ -14,7 +14,9 @@
     "lint": "node -e \"console.log('lint placeholder (Phase 3)')\"",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:integration": "jest --config jest.integration.config.js --runInBand",
+    "test:integration:coverage": "jest --config jest.integration.coverage.config.js --runInBand"
   },
   "dependencies": {
     "@connected-car/shared": "file:../shared-c_car_platform",
@@ -23,6 +25,8 @@
     "pg": "^8.11.5"
   },
   "devDependencies": {
-    "jest": "^30.0.0"
+    "jest": "^30.0.0",
+    "jest-junit": "^16.0.0",
+    "supertest": "^7.2.2"
   }
 }
